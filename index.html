@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electra Pro Hogar | Electricistas Autorizados 24h</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #f59e0b; /* Amarillo Eléctrico */
+            --dark: #0f172a;
+            --gray: #f1f5f9;
+            --white: #ffffff;
+            --success: #22c55e;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        body { background: var(--gray); color: var(--dark); }
+
+        /* Header */
+        header { backgroun…
+[19:59, 3/20/2026] Electra Pro Hogar: <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electra Pro Hogar | Electricistas Autorizados 24h</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #f59e0b; /* Amarillo Eléctrico */
+            --dark: #0f172a;
+            --gray: #f1f5f9;
+            --white: #ffffff;
+            --success: #22c55e;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        body { background: var(--gray); color: var(--dark); }
+
+        /* Header */
+        header { background: var(--dark); color: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.3); border-bottom: 3px solid var(--accent); }
+        .logo { font-size: 1.4rem; font-weight: 800; color: var(--white); text-transform: uppercase; letter-spacing: 1px; }
+        .logo span { color: var(--accent); }
+        nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
+        nav a:hover { color: var(--accent); }
+
+        /* Hero */
+        .hero { height: 75vh; background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 20px; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; line-height: 1.1; font-weight: 800; }
+        .hero span { color: var(--accent); }
+        .hero p { font-size: 1.2rem; max-width: 600px; opacity: 0.9; margin-bottom: 30px; }
+
+        /* Tarjetas de Servicios Rápidos */
+        .quick-services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 0 10%; margin-top: -50px; position: relative; z-index: 10; }
+        .s-card { background: var(--white); padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border-bottom: 4px solid var(--accent); }
+
+        /* Galería */
+        .section-title { text-align: center; padding: 80px 0 30px; font-size: 2.2rem; font-weight: 800; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 0 5%; margin-bottom: 60px; }
+        .gallery-item { position: relative; overflow: hidden; border-radius: 15px; height: 280px; box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.6s; }
+        .gallery-item:hover img { transform: scale(1.1) rotate(1deg); }
+        .gallery-text { position: absolute; bottom: 0; background: linear-gradient(transparent, rgba(0,0,0,0.9)); color: white; width: 100%; padding: 20px; font-weight: bold; }
+
+        /* Formulario Especializado */
+        .contact-container { background: var(--dark); color: white; padding: 100px 8%; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+        .contact-info h2 { color: var(--accent); font-size: 2.8rem; margin-bottom: 25px; line-height: 1.1; }
+        .contact-info p { font-size: 1.1rem; opacity: 0.8; margin-bottom: 15px; }
+        
+        form { display: flex; flex-direction: column; gap: 15px; background: var(--white); padding: 40px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+        form input, form textarea { padding: 15px; border: 1px solid #e2e8f0; border-radius: 10px; font-size: 1rem; outline: none; }
+        form input:focus { border-color: var(--accent); ring: 2px solid var(--accent); }
+        form button { background: var(--accent); color: var(--dark); border: none; padding: 18px; font-weight: 800; border-radius: 10px; cursor: pointer; transition: 0.4s; font-size: 1rem; }
+        form button:hover { background: var(--dark); color: var(--white); transform: translateY(-2px); }
+
+        /* WhatsApp y Flotantes */
+        .wsp { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 35px; text-decoration: none; box-shadow: 0 10px 25px rgba(0,0,0,0.3); z-index: 2000; transition: 0.3s; }
+        .wsp:hover { transform: scale(1.1); }
+
+        footer { background: #020617; color: #64748b; text-align: center; padding: 40px; font-size: 0.9rem; }
+        footer b { color: var(--accent); }
+
+        @media (max-width: 768px) { 
+            .contact-container { grid-template-columns: 1fr; padding-top: 50px; } 
+            .hero h1 { font-size: 2.5rem; }
+            nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">⚡ Electra<span>Pro</span>Hogar</div>
+        <nav>
+            <a href="#servicios">SERVICIOS</a>
+            <a href="#trabajos">PROYECTOS</a>
+            <a href="#contacto">CONTACTO</a>
+            <a href="tel:+34634443592" style="background: var(--accent); color: var(--dark); padding: 8px 15px; border-radius: 5px;">📞 LLAMAR AHORA</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Soluciones Eléctricas para tu <span>Hogar</span></h1>
+        <p>Expertos en instalaciones, mantenimiento y averías. Seguridad y garantía en cada cable.</p>
+        <a href="#contacto" style="background: var(--accent); color: var(--dark); padding: 18px 45px; text-decoration: none; font-weight: 800; border-radius: 50px; font-size: 1.1rem; box-shadow: 0 10px 20px rgba(245, 158, 11, 0.3);">SOLICITAR TÉCNICO</a>
+    </section>
+
+    <div class="quick-services" id="servicios">
+        <div class="s-card">
+            <h3>⚡ Averías 24h</h3>
+            <p>Reparaciones urgentes de cortocircuitos y apagones.</p>
+        </div>
+        <div class="s-card">
+            <h3>🏠 Reformas</h3>
+            <p>Renovación completa de cableado en viviendas antiguas.</p>
+        </div>
+        <div class="s-card">
+            <h3>📝 Boletines</h3>
+            <p>Certificados oficiales y aumentos de potencia rápidos.</p>
+        </div>
+    </div>
+
+    <h2 class="section-title" id="trabajos">Nuestros Trabajos en Hogares</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1558389186-438424b00a32?auto=format&fit=crop&w=600&q=80" alt="Instalación Cuadro">
+            <div class="gallery-text">Nuevo Cuadro de Protección General</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?auto=format&fit=crop&w=600&q=80" alt="Iluminación Led">
+            <div class="gallery-text">Iluminación LED de Bajo Consumo</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Mecanismos">
+            <div class="gallery-text">Cambio de Mecanismos y Enchufes</div>
+        </div>
+    </div>
+
+    <section class="contact-container" id="contacto">
+        <div class="contact-info">
+            <h2>¿Necesitas un electricista de confianza?</h2>
+            <p>En <b>Electra Pro Hogar</b> cuidamos tu casa como si fuera la nuestra.</p>
+            <br>
+            <p>✅ Presupuestos sin compromiso.</p>
+            <p>✅ Técnicos autorizados por industria.</p>
+            <p>✅ Materiales de primera calidad.</p>
+        </div>
+        <form action="https://formsubmit.co/electraprohogar@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Nuevo contacto de Electra Pro Hogar">
+            <input type="text" name="name" placeholder="Tu Nombre Completo" required>
+            <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+            <input type="tel" name="phone" placeholder="Tu Teléfono (para llamarte ya)">
+            <textarea name="message" rows="4" placeholder="¿Qué avería o instalación tienes?" required></textarea>
+            <button type="submit">ENVIAR CONSULTA GRATIS</button>
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </section>
+
+    <a href="https://wa.me/34634443592" class="wsp" target="_blank">💬</a>
+
+    <footer>
+        <p>&copy; 2026 <b>Electra Pro Hogar</b> - Calidad Profesional en Electricidad.</p>
+        <p style="margin-top: 10px; font-size: 0.7rem; opacity: 0.5;">Diseño Web Profesional Sin Marcas de Agua.</p>
+    </footer>
+
+</body>
+</html>
